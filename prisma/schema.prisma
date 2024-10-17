@@ -1,0 +1,139 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Feature {
+  id          Int         @id @default(autoincrement())
+  type        FeatureType
+  name        String?
+  description String
+  effects     String[]
+  appendix    String?
+
+  community  Community?
+  ancestry   Ancestry?  @relation(fields: [ancestryId], references: [name])
+  ancestryId String?
+  item       Item?
+  weapon     Weapon?
+  class      Class?     @relation(fields: [classId], references: [name])
+  classId    String?
+  subclass   Subclass?  @relation(fields: [subclassId], references: [name])
+  subclassId String?
+
+  armor Armor?
+}
+
+model Community {
+  id        Int     @id @default(autoincrement())
+  name      String  @unique
+  feature   Feature @relation(fields: [featureId], references: [id])
+  featureId Int     @unique
+}
+
+model Ancestry {
+  name     String    @id
+  features Feature[]
+}
+
+model Item {
+  id        Int      @id @default(autoincrement())
+  name      String
+  feature   Feature? @relation(fields: [featureId], references: [id])
+  featureId Int?     @unique
+  class     Class?   @relation(fields: [classId], references: [name])
+  classId   String?
+}
+
+model Weapon {
+  id           Int      @id @default(autoincrement())
+  name         String
+  trait        Trait
+  range        Range
+  damage       String
+  burden       Int
+  feature      Feature? @relation(fields: [featureId], references: [id])
+  featureId    Int?     @unique
+  is_magical   Boolean
+  is_secondary Boolean
+  tier         Int
+}
+
+model Armor {
+  id         Int      @id @default(autoincrement())
+  name       String
+  base_score Int
+  feature    Feature? @relation(fields: [featureId], references: [id])
+  featureId  Int?     @unique
+}
+
+model Class {
+  name                 String     @id
+  subclasses           Subclass[]
+  domains              Domain[]
+  evasion_score        Int
+  major_threshold      Int
+  severe_threshold     Int
+  items                Item[]
+  features             Feature[]
+  background_questions String[]
+  connections          String[]
+}
+
+model Subclass {
+  class           Class     @relation(fields: [origin_class], references: [name])
+  origin_class    String
+  name            String    @id
+  spellcast_trait Trait?
+  features        Feature[]
+}
+
+enum Domain {
+  arcana
+  blade
+  bone
+  codex
+  grace
+  midnight
+  sage
+  splendor
+  valor
+}
+
+enum Trait {
+  agility
+  strength
+  finesse
+  instinct
+  presence
+  knowledge
+}
+
+enum Range {
+  melee
+  very_close
+  close
+  far
+  very_far
+}
+
+enum FeatureType {
+  class_base
+  class_hope
+  ancestry
+  community
+  subclass_foundation
+  subclass_specialization
+  subclass_mastery
+  domain_card
+  armor
+  weapon
+  item
+}
