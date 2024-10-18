@@ -30,7 +30,7 @@ app.get("/subclass/:origin_class", async (req, res) => {
 app.get("/item/starting-items", async (req, res) => {
     const items = await prisma.item.findMany({
         where: {
-            OR: [{ name: 'Minor Health Potion' }, { name: 'Minor Stamina Potion' }]
+            isStartingItem: true
         },
         include: { feature: true }
     });
