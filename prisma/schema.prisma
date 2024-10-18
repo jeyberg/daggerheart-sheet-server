@@ -44,12 +44,13 @@ model Ancestry {
 }
 
 model Item {
-  id        Int      @id @default(autoincrement())
-  name      String
-  feature   Feature? @relation(fields: [featureId], references: [id])
-  featureId Int?     @unique
-  class     Class?   @relation(fields: [classId], references: [name])
-  classId   String?
+  id             Int      @id @default(autoincrement())
+  name           String
+  isStartingItem Boolean  @default(false)
+  feature        Feature? @relation(fields: [featureId], references: [id])
+  featureId      Int?     @unique
+  class          Class?   @relation(fields: [classId], references: [name])
+  classId        String?
 }
 
 model Weapon {

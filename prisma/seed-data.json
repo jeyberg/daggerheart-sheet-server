@@ -2379,7 +2379,8 @@
           "effects": [],
           "type": "item"
         }
-      }
+      },
+      "isStartingItem": true
     },
     {
       "name": "Minor Stamina Potion",
@@ -2389,7 +2390,8 @@
           "effects": [],
           "type": "item"
         }
-      }
+      },
+      "isStartingItem": true
     }
   ]
 }
