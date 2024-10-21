@@ -1905,6 +1905,7 @@
   "armor": [
     {
       "name": "Gambeson Armor",
+      "tier": 1,
       "base_score": 3,
       "feature": {
         "create": {
@@ -1917,11 +1918,13 @@
     },
     {
       "name": "Leather Armor",
-      "base_score": 4
+      "base_score": 4,
+      "tier": 1
     },
     {
       "name": "Chainmail Armor",
       "base_score": 5,
+      "tier": 1,
       "feature": {
         "create": {
           "name": "Heavy",
@@ -1934,6 +1937,7 @@
     {
       "name": "Full Plate Armor",
       "base_score": 6,
+      "tier": 1,
       "feature": {
         "create": {
           "name": "Very Heavy",
