@@ -27,7 +27,7 @@ app.get("/subclass/:origin_class", async (req, res) => {
     res.json(subclasses);
 });
 
-app.get("/item/starting-items", async (req, res) => {
+app.get("/api/item/starting-items", async (req, res) => {
     const items = await prisma.item.findMany({
         where: {
             isStartingItem: true
@@ -38,20 +38,44 @@ app.get("/item/starting-items", async (req, res) => {
     res.json(items);
 });
 
-app.get("/weapon/all", async (req, res) => {
+app.get("/api/weapon/all", async (req, res) => {
+    const tier = req.query.tier ? +req.query.tier : 0;
     const weapon = await prisma.weapon.findMany({
+        where: {
+            tier
+        },
         include: { feature: true }
     });
 
     res.json(weapon);
 });
 
-app.get("/armor/all", async (req, res) => {
+app.get("/api/armor/all", async (req, res) => {
+    const tier = req.query.tier ? +req.query.tier : 0;
     const armor = await prisma.armor.findMany({
+        where: {
+            tier
+        },
         include: { feature: true }
     });
 
     res.json(armor);
+});
+
+app.get("/api/ancestry/all", async (req, res) => {
+    const ancestries = await prisma.ancestry.findMany({
+        include: { features: true }
+    });
+
+    res.json(ancestries);
+});
+
+app.get("/api/community/all", async (req, res) => {
+    const communities = await prisma.community.findMany({
+        include: { feature: true }
+    });
+
+    res.json(communities);
 });
 
 
