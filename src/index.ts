@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // GET
-app.get("/class/all", async (req, res) => {
+app.get("/api/class/all", async (req, res) => {
     const classes = await prisma.class.findMany({
         include: { features: true, items: true, subclasses: true}
     });
@@ -15,7 +15,7 @@ app.get("/class/all", async (req, res) => {
     res.json(classes);
 });
 
-app.get("/subclass/:origin_class", async (req, res) => {
+app.get("/api/subclass/:origin_class", async (req, res) => {
     const origin_class = req.params.origin_class;
 
     const subclasses = prisma.subclass.findMany({
