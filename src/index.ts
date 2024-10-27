@@ -9,7 +9,11 @@ app.use(express.json());
 // GET
 app.get("/api/class/all", async (req, res) => {
   const classes = await prisma.class.findMany({
-    include: { features: true, items: true, subclasses: true },
+    include: {
+      features: true,
+      items: true,
+      subclasses: { include: { features: true } },
+    },
   });
 
   res.json(classes);
