@@ -61,15 +61,15 @@ model Weapon {
   burden       Int
   feature      Feature? @relation(fields: [featureId], references: [id])
   featureId    Int?     @unique
-  is_magical   Boolean
-  is_secondary Boolean
+  isMagical   Boolean
+  isSecondary Boolean
   tier         Int
 }
 
 model Armor {
   id         Int      @id @default(autoincrement())
   name       String
-  base_score Int
+  baseScore Int
   feature    Feature? @relation(fields: [featureId], references: [id])
   featureId  Int?     @unique
   tier       Int
@@ -79,20 +79,20 @@ model Class {
   name                 String     @id
   subclasses           Subclass[]
   domains              Domain[]
-  evasion_score        Int
-  major_threshold      Int
-  severe_threshold     Int
+  evasionScore        Int
+  majorThreshold      Int
+  severeThreshold     Int
   items                Item[]
   features             Feature[]
-  background_questions String[]
+  backgroundQuestions String[]
   connections          String[]
 }
 
 model Subclass {
-  class           Class     @relation(fields: [origin_class], references: [name])
-  origin_class    String
+  class           Class     @relation(fields: [originClass], references: [name])
+  originClass    String
   name            String    @id
-  spellcast_trait Trait?
+  spellcastTrait Trait?
   features        Feature[]
 }
 
@@ -119,21 +119,21 @@ enum Trait {
 
 enum Range {
   melee
-  very_close
+  veryClose
   close
   far
-  very_far
+  veryFar
 }
 
 enum FeatureType {
-  class_base
-  class_hope
+  classBase
+  classHope
   ancestry
   community
-  subclass_foundation
-  subclass_specialization
-  subclass_mastery
-  domain_card
+  subclassFoundation
+  subclassSpecialization
+  subclassMastery
+  domainCard
   armor
   weapon
   item

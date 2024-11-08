@@ -5,10 +5,10 @@ CREATE TYPE "Domain" AS ENUM ('arcana', 'blade', 'bone', 'codex', 'grace', 'midn
 CREATE TYPE "Trait" AS ENUM ('agility', 'strength', 'finesse', 'instinct', 'presence', 'knowledge');
 
 -- CreateEnum
-CREATE TYPE "Range" AS ENUM ('melee', 'very_close', 'close', 'far', 'very_far');
+CREATE TYPE "Range" AS ENUM ('melee', 'veryClose', 'close', 'far', 'veryFar');
 
 -- CreateEnum
-CREATE TYPE "FeatureType" AS ENUM ('class_base', 'class_hope', 'ancestry', 'community', 'subclass_foundation', 'subclass_specialization', 'subclass_mastery', 'domain_card', 'armor', 'weapon', 'item');
+CREATE TYPE "FeatureType" AS ENUM ('classBase', 'classHope', 'ancestry', 'community', 'subclassFoundation', 'subclassSpecialization', 'subclassMastery', 'domainCard', 'armor', 'weapon', 'item');
 
 -- CreateTable
 CREATE TABLE "Feature" (
@@ -27,11 +27,10 @@ CREATE TABLE "Feature" (
 
 -- CreateTable
 CREATE TABLE "Community" (
-    "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "featureId" INTEGER NOT NULL,
 
-    CONSTRAINT "Community_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "Community_pkey" PRIMARY KEY ("name")
 );
 
 -- CreateTable
@@ -45,6 +44,7 @@ CREATE TABLE "Ancestry" (
 CREATE TABLE "Item" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
+    "isStartingItem" BOOLEAN NOT NULL DEFAULT false,
     "featureId" INTEGER,
     "classId" TEXT,
 
@@ -60,8 +60,8 @@ CREATE TABLE "Weapon" (
     "damage" TEXT NOT NULL,
     "burden" INTEGER NOT NULL,
     "featureId" INTEGER,
-    "is_magical" BOOLEAN NOT NULL,
-    "is_secondary" BOOLEAN NOT NULL,
+    "isMagical" BOOLEAN NOT NULL,
+    "isSecondary" BOOLEAN NOT NULL,
     "tier" INTEGER NOT NULL,
 
     CONSTRAINT "Weapon_pkey" PRIMARY KEY ("id")
@@ -71,8 +71,9 @@ CREATE TABLE "Weapon" (
 CREATE TABLE "Armor" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
-    "base_score" INTEGER NOT NULL,
+    "baseScore" INTEGER NOT NULL,
     "featureId" INTEGER,
+    "tier" INTEGER NOT NULL,
 
     CONSTRAINT "Armor_pkey" PRIMARY KEY ("id")
 );
@@ -82,8 +83,8 @@ CREATE TABLE "Class" (
     "name" TEXT NOT NULL,
     "domains" "Domain"[],
     "evasion_score" INTEGER NOT NULL,
-    "major_threshold" INTEGER NOT NULL,
-    "severe_threshold" INTEGER NOT NULL,
+    "majorThreshold" INTEGER NOT NULL,
+    "severeThreshold" INTEGER NOT NULL,
     "background_questions" TEXT[],
     "connections" TEXT[],
 
@@ -92,15 +93,12 @@ CREATE TABLE "Class" (
 
 -- CreateTable
 CREATE TABLE "Subclass" (
-    "origin_class" TEXT NOT NULL,
+    "originClass" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "spellcast_trait" "Trait",
+    "spellcastTrait" "Trait",
 
     CONSTRAINT "Subclass_pkey" PRIMARY KEY ("name")
 );
-
--- CreateIndex
-CREATE UNIQUE INDEX "Community_name_key" ON "Community"("name");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Community_featureId_key" ON "Community"("featureId");
@@ -139,4 +137,4 @@ ALTER TABLE "Weapon" ADD CONSTRAINT "Weapon_featureId_fkey" FOREIGN KEY ("featur
 ALTER TABLE "Armor" ADD CONSTRAINT "Armor_featureId_fkey" FOREIGN KEY ("featureId") REFERENCES "Feature"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "Subclass" ADD CONSTRAINT "Subclass_origin_class_fkey" FOREIGN KEY ("origin_class") REFERENCES "Class"("name") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Subclass" ADD CONSTRAINT "Subclass_originClass_fkey" FOREIGN KEY ("originClass") REFERENCES "Class"("name") ON DELETE RESTRICT ON UPDATE CASCADE;

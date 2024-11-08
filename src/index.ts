@@ -19,12 +19,12 @@ app.get("/api/class/all", async (req, res) => {
   res.json(classes);
 });
 
-app.get("/api/subclass/:origin_class", async (req, res) => {
-  const origin_class = req.params.origin_class;
+app.get("/api/subclass/:originClass", async (req, res) => {
+  const originClass = req.params.originClass;
 
   const subclasses = await prisma.subclass.findMany({
     where: {
-      origin_class,
+      originClass,
     },
     include: { features: true },
   });

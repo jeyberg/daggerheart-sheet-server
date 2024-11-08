@@ -448,9 +448,9 @@
     {
       "name": "Bard",
       "domains": ["grace", "codex"],
-      "evasion_score": 9,
-      "major_threshold": 8,
-      "severe_threshold": 16,
+      "evasionScore": 9,
+      "majorThreshold": 8,
+      "severeThreshold": 16,
       "items": {
         "create": [
           {
@@ -466,14 +466,14 @@
           {
             "name": "bard's hope",
             "description": "When you or an ally Close to you makes a Presence roll and either succeeds with Fear or fails, spend three Hope to negate that roll’s consequences by intervening.",
-            "type": "class_hope",
+            "type": "classHope",
             "effects": []
           },
           {
             "name": "Rally",
             "description": "Once per session as your party prepares to enter a dangerous or difficult situation, describe how you rally them and give yourself and each of your allies a d6 Rally die. Anyone with a Rally die can spend it to roll it, adding the result to an action roll, reaction roll, or damage roll, or clearing Stress equal to the Rally die result. At the end of each session, all unspent Rally dice are cleared. The Rally die you distribute increases to 1d8 at level 5.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           }
         ]
       },
@@ -481,20 +481,20 @@
         "create": [
           {
             "name": "Wordsmith",
-            "spellcast_trait": "presence",
+            "spellcastTrait": "presence",
             "features": {
               "create": [
                 {
                   "name": "Heart of a Poet",
                   "description": "When speaking to a person you're trying to impress, persuade, or offend, you can spend Hope and add 1d4 to the action roll against them.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Rousing Speech",
                   "description": "Once per long rest, you can use an action to give a heartfelt, inspiring speech. All allies who can hear you clear two Stress.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "",
@@ -504,20 +504,20 @@
                     "Help an Ally without spending Hope.",
                     "Give them an additional downtime move during a rest."
                   ],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "name": "",
                   "description": "The Rally die you distribute increases to a d10. In addition, whenever you Help an Ally, if you narrate the moment as if you were writing the tale of their heroism in a memoir, your advantage die to help them is a d10.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Troubadour",
-            "spellcast_trait": "presence",
+            "spellcastTrait": "presence",
             "features": {
               "create": [
                 {
@@ -527,24 +527,24 @@
                     "When you play an epic song, make a Close target temporarily Vulnerable.",
                     "When you play a heartbreaking song, you and any Close allies take a Hope."
                   ],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "Your rallying songs also help steel the courage of those who listen. Anybody who receives a Rally die from you via your Rally ability can also choose to either gain a Hope or clear a Stress.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Your craft rivals the greats, your skill and creativity unbounded. You can perform each of your Foundation songs an additional time per long rest.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "Who from your community taught you to have such confidence in yourself?",
         "You were in love once. Who was it with, and how did they hurt you?",
         "You’ve always looked up to another bard. Who are they and why do you idolize them?"
@@ -558,9 +558,9 @@
     {
       "name": "Druid",
       "domains": ["sage", "arcana"],
-      "evasion_score": 8,
-      "major_threshold": 8,
-      "severe_threshold": 16,
+      "evasionScore": 8,
+      "majorThreshold": 8,
+      "severeThreshold": 16,
       "items": {
         "create": [
           {
@@ -576,20 +576,20 @@
           {
             "name": "druid's hope",
             "description": "Spend three Hope while in Beastform to increase your damage thresholds by +3 until you drop the form.",
-            "type": "class_hope",
+            "type": "classHope",
             "effects": []
           },
           {
             "name": "Wildtouch",
             "description": "You can perform harmless, subtle effects that involve nature at will. (Ex: causing a flower to rapidly grow, summon a slight gust of wind, start a campfire, etc.)",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Beastform",
             "description": "Mark a Stress to transform into a magical creature of your level or lower from the Beastform list. While transformed, you can’t use your weapons or cast any spells, but you gain the features, attack trait, and evasion bonus of the creature. You can drop out of this form at any time. When in Beastform, your armor becomes part of your body and you mark armor slots as usual; when you drop out of Beastform, those marked armor slots remain marked. If you mark your last Hit Point or Stress, this form automatically drops.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           }
         ]
       },
@@ -597,7 +597,7 @@
         "create": [
           {
             "name": "Warden of the Elements",
-            "spellcast_trait": "instinct",
+            "spellcastTrait": "instinct",
             "features": {
               "create": [
                 {
@@ -609,7 +609,7 @@
                     "Water: When you deal damage to an enemy in Melee range, all other enemies within Very Close range mark a Stress.",
                     "Air: You can hover, gaining advantage on Agility rolls."
                   ],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "Once per short rest, while in Elemental Incarnation, you can assume an elemental aura matching your embodied element. The aura’s effects apply within your Close Range, following you until Elemental Incarnation ends.",
@@ -619,7 +619,7 @@
                     "Water: After an enemy deals damage to you, you can mark a Stress to move them anywhere within Very Close range.",
                     "Air: When you or an ally take damage from an attack beyond Melee range, reduce it by 1d8."
                   ],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "While in your Elemental Incarnation, you further embody the spirit and gain the following benefit for that element:",
@@ -629,50 +629,50 @@
                     "Water: When you are hit by an attack, you can mark a Stress to make the attacker Vulnerable.",
                     "Air: You gain +1 Evasion and can fly."
                   ],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Warden of Renewal",
-            "spellcast_trait": "instinct",
+            "spellcastTrait": "instinct",
             "features": {
               "create": [
                 {
                   "name": "Clarity of Nature",
                   "description": "Once per long rest, you may create a space of natural serenity around you. After spending a few minutes resting within the space, you can clear Stress equal to your Instinct trait, distributed as you choose between you and your allies.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Regeneration",
                   "description": "Use an action and spend 3 Hope to clear 1d4 Hit Points on a creature you are touching.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You can now use Regeneration on a creature within Very Close range, instead of touch.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "name": "Warden's Protection",
                   "description": "Once per long rest, you can use an action to magically repair armor outside of downtime. When you do, you or one ally in your Close Range can clear a number of Armor Slots equal to your Instinct.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Your animal transformation embodies a healing guardian spirit. While you are in Beastform, when an ally within Close Range marks 2 or more Hit Points, you can mark a Stress to reduce the amount of Hit Points they mark by 1.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "Why was the community you grew up in so reliant on nature and its creatures?",
         "What was the first bond you made with a wild animal? Why did it end?",
         "Who has been trying to hunt you down? What do you think they want from you?"
@@ -686,9 +686,9 @@
     {
       "name": "Guardian",
       "domains": ["valor", "blade"],
-      "evasion_score": 8,
-      "major_threshold": 8,
-      "severe_threshold": 16,
+      "evasionScore": 8,
+      "majorThreshold": 8,
+      "severeThreshold": 16,
       "items": {
         "create": [
           { "name": "A Stone Totem from Your Mentor" },
@@ -700,7 +700,7 @@
           {
             "name": "guardian's hope",
             "description": "Spend three Hope to clear up to three armor slots.",
-            "type": "class_hope",
+            "type": "classHope",
             "effects": []
           },
           {
@@ -712,7 +712,7 @@
               "Add the current value of your Unstoppable die to your damage dice total.",
               "Cannot be Restrained or Vulnerable."
             ],
-            "type": "class_base"
+            "type": "classBase"
           }
         ]
       },
@@ -725,32 +725,32 @@
                 {
                   "description": "When you take this foundation, increase all of your Damage Thresholds by +1.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take physical damage, always reduce it by your armor score before applying it to your thresholds. You can still spend armor slots to reduce it further.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take this specialization, raise all of your Damage Thresholds by +2.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When a Very Close ally takes damage, you can mark an Armor Slot to reduce the damage by your Armor Score.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you take this mastery, raise all of your Damage Thresholds by +3.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "When an ally within Close range has 2 Hit Points or fewer and should take damage, you can immediately mark a Stress to sprint to their side and take the damage instead.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
@@ -762,29 +762,29 @@
                 {
                   "description": "When you take this Foundation, gain an additional armor slot immediately.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you are hit by an enemy in melee range, immediately roll a number of d6 equal to the amount of hit points you marked. For each result of 5+, deal a hit point back to the enemy.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When an enemy damages an ally within your Melee range, the next successful attack you make against that enemy has +1 Proficiency.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Spend 2 Hope to prioritize an enemy until your next rest. When you make an Attack Roll against your prioritized enemy, you can switch the values on your Hope and Fear dice. You can only prioritize one enemy at a time.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "Who from your community did you fail to protect, and why do you still think of them?",
         "You’ve recently been tasked with protecting something important, with the goal of delivering it somewhere dangerous. What is it and where does it need to go?",
         "You consider an aspect of yourself to be a “weakness.” What is it, and how has it affected you?"
@@ -798,9 +798,9 @@
     {
       "name": "Ranger",
       "domains": ["bone", "sage"],
-      "evasion_score": 10,
-      "major_threshold": 7,
-      "severe_threshold": 14,
+      "evasionScore": 10,
+      "majorThreshold": 7,
+      "severeThreshold": 14,
       "items": {
         "create": [
           { "name": "A Trophy From Your First Kill" },
@@ -817,12 +817,12 @@
               "All damage rolls you make against them also deal a Stress.",
               "When you miss them with an attack, you can end Ranger’s Focus to reroll your Duality dice and take the new result."
             ],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "ranger's hope",
             "description": "Spend three Hope and increase your Evasion by +1 until your next short rest.",
-            "type": "class_hope",
+            "type": "classHope",
             "effects": []
           }
         ]
@@ -831,83 +831,83 @@
         "create": [
           {
             "name": "Wayfinder",
-            "spellcast_trait": "agility",
+            "spellcastTrait": "agility",
             "features": {
               "create": [
                 {
                   "description": "When you take this foundation, increase all of your Damage Thresholds by +1.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take physical damage, always reduce it by your armor score before applying it to your thresholds. You can still spend armor slots to reduce it further.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take this specialization, raise all of your Damage Thresholds by +2.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When a Very Close ally takes damage, you can mark an Armor Slot to reduce the damage by your Armor Score.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you take this mastery, raise all of your Damage Thresholds by +3.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "When an ally within Close range has 2 Hit Points or fewer and should take damage, you can immediately mark a Stress to sprint to their side and take the damage instead.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Beastbound",
-            "spellcast_trait": "agility",
+            "spellcastTrait": "agility",
             "features": {
               "create": [
                 {
                   "description": "You have an animal companion of your choice (at GM's discretion). They always stay next to you unless you tell them otherwise.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "Take the Ranger Companion sheet. Whenever you level up your character, also choose a level up option for your companion from this sheet.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take this Specialization, gain an additional level-up option for your companion immediately.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When an enemy attacks you while they’re in your companion’s Melee range, you gain +2 Evasion against the attack.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you take this Specialization, gain 2 level up options for your companion immediately.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "Once per long rest, if the damage from an attack would mark your companion’s or your last Hit Point, and you are within each other’s Close range, the other rushes to their side and takes that damage instead.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "A terrible creature hurt your community, and you’ve vowed to hunt them down. What are they, and what unique trail or sign do they leave behind anywhere they go?",
         "Your first kill almost killed you too. What was it, and what part of you was never the same after this event?",
         "You’ve traveled many dangerous lands, but what is the one place you refuse to go?"
@@ -921,9 +921,9 @@
     {
       "name": "Rogue",
       "domains": ["midnight", "grace"],
-      "evasion_score": 11,
-      "major_threshold": 6,
-      "severe_threshold": 12,
+      "evasionScore": 11,
+      "majorThreshold": 6,
+      "severeThreshold": 12,
       "items": {
         "create": [{ "name": "Forgery Tools" }, { "name": "A Grappling Hook" }]
       },
@@ -933,18 +933,18 @@
             "name": "Hide",
             "description": "When you move into a location where no enemies can see you, you can use an action to become Hidden (any rolls against you have disadvantage). As a Rogue, when you are Hidden, targets also can’t see you, even if they move into line of sight. You are no longer Hidden after you move or attack.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Sneak Attack",
             "description": "Whenever you make an attack while you are Hidden or while an ally is in Melee with your target, add a d6 to your damage roll. When you use Sneak Attack, you can also spend any number of Hope before the attack roll, then if the attack is successful, also add a number of d6 equal to the Hope spent.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "rogue's hope",
             "description": "Spend three Hope to increase your Sneak Attack damage. Until your next short rest, you add 3d6 instead of 1d6 to each Sneak Attack damage roll.",
-            "type": "class_hope"
+            "type": "classHope"
           }
         ]
       },
@@ -952,7 +952,7 @@
         "create": [
           {
             "name": "Syndicate",
-            "spellcast_trait": "finesse",
+            "spellcastTrait": "finesse",
             "features": {
               "create": [
                 {
@@ -964,7 +964,7 @@
                     "We used to be together. It’s a long story.",
                     "We didn’t part on great terms."
                   ],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "Once per session, you can briefly call forth a shady contact. Immediately choose one of the benefits below and describe what brought them here to help you in this moment:",
@@ -973,7 +973,7 @@
                     "The next time you make an Action Roll, their help lets you increase either your Hope or Fear die result by 3.",
                     "The next time you deal damage, they snipe from the shadows, adding 2d8 to your damage roll."
                   ],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "You can now use your Specialization Feature three times per session. You can also choose from the following options when you use it:",
@@ -981,51 +981,51 @@
                     "When you mark at least 1 Hit Point, the contact rushes out to shield you, reducing the Hit Points marked by 1.",
                     "When you make a Presence Roll in conversation, they back you up. Your Hope die becomes a d20 for the roll."
                   ],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Nightwalker",
-            "spellcast_trait": "finesse",
+            "spellcastTrait": "finesse",
             "features": {
               "create": [
                 {
                   "name": "Shadow Stepper",
                   "description": "You can move from shadow to shadow. When you step into the shadow cast by another creature or object, or into an area of darkness, mark a Stress to disappear from where you are and reappear inside of any other shadow within Far range. When you do, you are Hidden.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Dark Cloud",
                   "description": "Make a Spellcast Roll (15). On a success, create a temporary dark cloud that covers any area within Close range. Anyone in this cloud can’t see outside of it, and anyone outside of it can’t see in. You are considered Hidden from any enemy it blocks line of sight from.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "name": "Adrenaline",
                   "description": "When you are Vulnerable, you always add your Level to your damage roll total.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Your Evasion permanently increases by +1, and you can now use Shadow Stepper to move within Very Far range.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "name": "Cloaked",
                   "description": "At any time, you can mark a Stress to cloak yourself. While cloaked, you gain the benefits of the Hidden condition and automatically lose the Restrained condition if you have it. You stop being cloaked when you roll with Fear or start a short rest.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "What did you get caught doing that had you exiled from your home community?",
         "You used to have a different life, but you’ve tried to leave it behind you. Who from that time is still chasing you?",
         "Who from that other life were you most sad to say goodbye to?"
@@ -1039,9 +1039,9 @@
     {
       "name": "Seraph",
       "domains": ["splendor", "valor"],
-      "evasion_score": 7,
-      "major_threshold": 8,
-      "severe_threshold": 16,
+      "evasionScore": 7,
+      "majorThreshold": 8,
+      "severeThreshold": 16,
       "items": {
         "create": [
           { "name": "A Bundle of Offerings" },
@@ -1054,13 +1054,13 @@
             "name": "Prayer Dice",
             "description": "At the beginning of each session, roll a number of d4 dice equal to your Spellcast trait and store them to the right. You can spend one or more of these dice at any time to aid yourself or an ally within Far range. You can use the spent die’s value to reduce any incoming damage or add to any roll result after the roll. Additionally, you can instead exchange the value for that many Hope you can give to any other PC in range. Clear these dice at the end of each session.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "seraph's hope",
             "description": "Spend three Hope and either reroll a Prayer Die or refresh one of your used Prayer Dice.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           }
         ]
       },
@@ -1068,7 +1068,7 @@
         "create": [
           {
             "name": "Winged Sentinel",
-            "spellcast_trait": "strength",
+            "spellcastTrait": "strength",
             "features": {
               "create": [
                 {
@@ -1077,60 +1077,60 @@
                     "Spend a Hope to pick up and carry another willing creature that is approximately your size or smaller.",
                     "Mark a Stress to deal 1d8 additional damage on a successful attack."
                   ],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "Your supernatural visage strikes awe and fear. While in flight, you have advantage on Presence Rolls, and if that roll is a success with Hope, you can remove a Fear from the GM's Fear Pool instead of gaining Hope.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you take this mastery, increase your Severe Damage Threshold by +4.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "While in flight, your Winged Sentinel Foundation feature deals an extra 1d12 damage instead of 1d8.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Divine Wielder",
-            "spellcast_trait": "strength",
+            "spellcastTrait": "strength",
             "features": {
               "create": [
                 {
                   "name": "Spirit Weapon",
                   "description": "When you have a Melee weapon equipped, it can fly from your hand to strike an enemy in Close range and return to you. You can mark a Stress to target an additional target in range with the same Attack Roll.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Sparing Touch",
                   "description": "Once per long rest, use an action and touch a creature to clear 2 Hit Points or 2 Stress from them.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Devout",
                   "description": "When you roll your prayer dice, you may roll an additional die and drop the lowest option. Additionally, your Sparing Touch feature can now be used one additional time per long rest.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you roll damage for your Spirit Weapon, if any of your damage dice values match, you can roll an additional damage die for each match. These additional damage dice can’t be used to match and add more dice. For example, if you roll three 5s, add two damage dice to your roll.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "Who is the god you have devoted yourself to, and in your moment of desperation, what incredible feat did they perform for you that made you indebted to them?",
         "How did your own appearance change after taking your oath?",
         "In what strange or unique way do you communicate with your god?"
@@ -1144,9 +1144,9 @@
     {
       "name": "Sorcerer",
       "domains": ["arcana", "midnight"],
-      "evasion_score": 9,
-      "major_threshold": 6,
-      "severe_threshold": 12,
+      "evasionScore": 9,
+      "majorThreshold": 6,
+      "severeThreshold": 12,
       "items": {
         "create": [
           { "name": "A Whispering Orb" },
@@ -1159,13 +1159,13 @@
             "name": "Arcane Sense",
             "description": "You can sense the presence of magical people and objects when you’re close to them.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Minor Illusion",
             "description": "Make a Spellcast Roll (10). On a success, you create a minor visual illusion no larger than yourself within close Range. This illusion is convincing to anyone in Far range or further.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Channel Raw Power",
@@ -1174,14 +1174,14 @@
               "Gain Hope equal to the level of the card.",
               "Enhance a damage-dealing spell by dealing extra magic damage equal to twice the level of the card."
             ],
-            "type": "class_base",
+            "type": "classBase",
             "appendix": "During your next short rest, you can return this card to your hand without paying its recall cost."
           },
           {
             "name": "sorcerer's hope",
             "description": "Spend three Hope after a Spellcast Roll to double the result of your Hope roll.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           }
         ]
       },
@@ -1189,7 +1189,7 @@
         "create": [
           {
             "name": "Primal Origin",
-            "spellcast_trait": "instinct",
+            "spellcastTrait": "instinct",
             "features": {
               "create": [
                 {
@@ -1200,35 +1200,35 @@
                     "Reroll any number of Damage Dice.",
                     "Hit an additional target within range."
                   ],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You can enhance the magical practices of others with your essence. When you Help an Ally on a Spellcast Roll, the advantage die you roll is a d8 instead of a d6. After you help them make their Spellcast Roll, once per long rest, you can swap the values of their Duality dice.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "You can gather magical energy to enhance your capability. You become charged after taking magic damage or when you spend 2 Hope to become charged. When you successfully cast a spell while charged, you can spend your charge to temporarily increase either that spell’s Damage Proficiency by +1 or its Reaction Roll Difficulty by +3. You stop being charged when you finish a long rest.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "Elemental Origin",
-            "spellcast_trait": "instinct",
+            "spellcastTrait": "instinct",
             "features": {
               "create": [
                 {
                   "description": "Your elemental origin lets you manipulate and shape a certain kind of element.\nChoose one: WATER · FIRE · AIR · LIGHTNING · EARTH\nYou can channel this element into unique, harmless effects. Additionally, you can spend a Hope and describe how your control over this element helps an action roll you’re about to make, then add either +2 to the roll or +3 to the damage.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You can call forth your chosen element to protect you from harm. When an attack roll against you succeeds, you can spend a Stress and describe how you channel your element to defend you, then add 1d6 to your Evasion against the attack. If the new Evasion is high enough to avoid the attack, it does.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Once per long rest, you can transform into an elemental form of your chosen element. When you do, describe your transformation and gain two of the following benefits until you finish your next short rest:",
@@ -1239,14 +1239,14 @@
                     "+2 to your Armor Score",
                     "+2 Evasion"
                   ],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "What did you do that made the people in your community wary of you?",
         "What mentor taught you to control your untamed magic, and why are they no longer able to guide you?",
         "You have a deep fear you hide from everyone. What is it, and why does it scare you?"
@@ -1260,9 +1260,9 @@
     {
       "name": "Warrior",
       "domains": ["blade", "bone"],
-      "evasion_score": 10,
-      "major_threshold": 7,
-      "severe_threshold": 14,
+      "evasionScore": 10,
+      "majorThreshold": 7,
+      "severeThreshold": 14,
       "items": {
         "create": [
           { "name": "The Drawing of a Lover" },
@@ -1275,7 +1275,7 @@
             "name": "Battle Strategist",
             "description": "After a successful attack roll, you can describe how you outmaneuver your target, then mark a Stress to deal them a Stress.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Attack of Opportunity",
@@ -1285,19 +1285,19 @@
               "Deal your primary weapon damage.",
               "Move with them."
             ],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "Combat Training",
             "description": "Ignore burden when equipping weapons. Whenever you deal physical damage, add your level to its value.",
             "effects": [],
-            "type": "class_base"
+            "type": "classBase"
           },
           {
             "name": "warrior's hope",
             "description": "Spend three Hope to reroll any number of your damage dice on an attack.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           }
         ]
       },
@@ -1310,18 +1310,18 @@
                 {
                   "description": "On a roll with Hope, you can place a d6 on this card instead of taking a Hope. These are known as your Slayer dice. You can store a number of Slayer dice equal to your Proficiency. When you make an attack roll or damage roll, you can spend any number of these Slayer dice, rolling them and adding their value to your total. At the end of a session, clear any remaining Slayer dice on this card and gain that many Hope.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You can wield multiple weapons with dangerous ease. When you make a successful Attack Roll, you can spend a Hope to add one damage die from your secondary weapon to the damage.\nIn addition, once per long rest, when you roll your Slayer dice, you can reroll any 1s once, taking the new result.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "name": "Martial Preparation",
                   "description": "You’ve become an inspirational warrior to all who travel with you. You gain access to the Martial Preparation downtime move. To use this during a rest, describe how you instruct and train with your party, then give yourself and each ally a Slayer die, which is a d6. Allies can spend your Slayer die to enhance their own weapon Attack or Damage rolls.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
@@ -1333,24 +1333,24 @@
                 {
                   "description": "When you fail a roll with Fear, you gain a Hope.\nOnce per long rest, before you attempt something incredibly dangerous or face off against a foe who clearly outmatches you, describe what ritual you perform or preparation you make, then clear 2 Stress and gain 2 Hope.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You are vigilant in the face of mounting danger.\nWhile you have no more than 2 Hit Point slots unmarked, your Hope die becomes a d20.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Your unbending courage is a rallying point for your allies. You can initiate a Tag Team Roll one extra time per session. Additionally, when an ally initiates a Tag Team Roll with you, they only need to spend 2 Hope to do so.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "Who taught you to fight, and why did they stay behind when you left home?",
         "Somebody defeated you in battle years ago and left you to die. Who was it, and why did it feel like such a betrayal?",
         "What legendary place have you always wanted to visit, and why is it so special?"
@@ -1364,9 +1364,9 @@
     {
       "name": "Wizard",
       "domains": ["codex", "splendor"],
-      "evasion_score": 10,
-      "major_threshold": 5,
-      "severe_threshold": 10,
+      "evasionScore": 10,
+      "majorThreshold": 5,
+      "severeThreshold": 10,
       "items": {
         "create": [
           { "name": "A Book You’re Trying to Translate" },
@@ -1379,19 +1379,19 @@
             "name": "Prestidigitation",
             "description": "You can perform harmless, subtle magical effects at will. For example, you might change an object’s color, create a smell, light a candle, cause a tiny object to float, illuminate a room, or repair a small object.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           },
           {
             "name": "Strange Patterns",
             "description": "Choose a number between 1 and 12. Whenever you roll that number on a Duality die, gain a Hope or clear a Stress. You can change this number when you finish a long rest.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           },
           {
             "name": "wizard's hope",
             "description": "Spend three Hope instead of marking your last hit point.",
             "effects": [],
-            "type": "class_hope"
+            "type": "classHope"
           }
         ]
       },
@@ -1399,79 +1399,79 @@
         "create": [
           {
             "name": "School of Knowledge",
-            "spellcast_trait": "knowledge",
+            "spellcastTrait": "knowledge",
             "features": {
               "create": [
                 {
                   "description": "You’ve gained priceless knowledge through great study. You have advantage on all Knowledge Rolls to recall information. If this roll is about the magical nature of a creature or enchantment, gain a Hope even on a roll with Fear.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "name": "Adept",
                   "description": "You can mark a Stress instead of spending a Hope to use an Experience on a roll. If you do, double the Experience modifier for that roll.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you take this Specialization, you may change an existing Experience you have, then add +1 to one of your Experiences.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "Once per short rest, when recalling a Domain card in your vault, you can reduce its Recall Cost by 1.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you take this Mastery, choose two Experiences and add +1 to each of them.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "Whenever you wish to use an Experience, roll a d6. On a result of 5 or 6, you can do so without spending a Hope.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           },
           {
             "name": "School of War",
-            "spellcast_trait": "knowledge",
+            "spellcastTrait": "knowledge",
             "features": {
               "create": [
                 {
                   "description": "You've focused your studies on shaping magic in dangerous and powerful ways. Gain an extra armor slot.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "When you succeed on an Attack Roll with Fear, you deal an extra 1d10 magic damage.",
                   "effects": [],
-                  "type": "subclass_foundation"
+                  "type": "subclassFoundation"
                 },
                 {
                   "description": "You can concentrate to maintain a protective barrier of magic. While you have at least 2 Hope, you can add your Spellcast trait to your Evasion.\nAdditionally, the extra magic damage from your School of War Foundation feature increases to 2d10.",
                   "effects": [],
-                  "type": "subclass_specialization"
+                  "type": "subclassSpecialization"
                 },
                 {
                   "description": "When you succeed on an attack roll with Hope, you can choose to make it with Fear instead.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 },
                 {
                   "description": "The extra magic damage from your School of War Foundation feature increases to 3d10.",
                   "effects": [],
-                  "type": "subclass_mastery"
+                  "type": "subclassMastery"
                 }
               ]
             }
           }
         ]
       },
-      "background_questions": [
+      "backgroundQuestions": [
         "What did your community once count on you for? How did you let them down?",
         "You’ve spent your life searching for an object or book of great significance. What is it and why is it so important to you?",
         "You have a powerful rival. Who are they, and why are you so determined to be their end?"
@@ -1487,49 +1487,49 @@
     {
       "level": 1,
       "domain": "grace",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Deft Deceiver",
       "features": [
         {
           "description": "Spend a Hope to take advantage on a roll you make to deceive or trick someone into believing a lie you tell them.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "grace",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Enrapture",
       "features": [
         {
           "description": "Make a Spellcast Roll against a close target. On a success, you can temporarily keep their attention on you, narrowing their field of view and drowning out any sound but your voice. Once per short rest, you may also mark a Stress on a success to deal a Stress to the target.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "grace",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Inspirational Words",
       "features": [
         {
           "description": "You can imbue your speech with enhancing power. At the beginning of a session, place a number of tokens on this card equal to your Presence score. When you recite your words, spend a token and choose an option from the list below to grant to the ally you are speaking to. If the action tracker is active, place that token on it. At the end of a session, clear all tokens.",
           "effects": ["Clear a Stress", "Heal a Hit Point", "Gain a Hope"],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "codex",
-      "recall_cost": 2,
+      "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Ava",
       "features": [
@@ -1537,26 +1537,26 @@
           "name": "Power Push",
           "description": "Make a Spellcast Roll against a target in melee range. On a success, they are blasted back to far range and take d10+2 magic damage using your proficiency.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Tava’s Armor",
           "description": "Use an action to spend a Hope that gives a target you can touch +1d6 to their Armor score the next time they mark an Armor Slot. You can’t stack Tava’s Armor on one creature.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Ice Spikes",
           "description": "Make a Spellcast Roll to summon large ice spikes within very far range. If you use them as a weapon, on a success, deal d6 physical damage using your proficiency.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "codex",
-      "recall_cost": 2,
+      "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Illiat",
       "features": [
@@ -1564,26 +1564,26 @@
           "name": "Slumber",
           "description": "Make a Spellcast Roll against a very close target. On a success, they fall into a deep sleep until they take damage or the GM spends a Fear to awaken them.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Arcane Barrage",
           "description": "Once per short rest, use an action to spend any number of Hope and shoot magical projectiles that automatically strike an enemy within close range. Roll an amount of d6 equal to the Hope you spent, and deal that much direct magic damage.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Telepathy",
           "description": "You may open a line of mental communication with one target you can see. This connection lasts until you use this spell to connect with another creature.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "codex",
-      "recall_cost": 2,
+      "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Tyfar",
       "features": [
@@ -1591,313 +1591,313 @@
           "name": "Wild Flame",
           "description": "Make a Spellcast Roll against up to three enemies in melee range of you. A flame erupts from your hand, dealing 2d6 magic damage and a Stress to any you succeed against.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Magic Hand",
           "description": "You can reach out with a magical hand the same size and strength as your own to anywhere within far range of you.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         },
         {
           "name": "Mysterious Mist",
           "description": "Use an action to spend a Hope and cast a temporary, thick fog that encircles a stationary area up to very close range your current location. Everyone within is Hidden to anybody outside the fog.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "arcana",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Rune Ward",
       "features": [
         {
           "description": "You have a deeply personal trinket that can be infused with protective magic and held as a ward by you or an ally. Describe what it is and why it’s important to you. When the holder of the ward takes damage, they can spend a Hope to reduce it by 1d8. If the ward die rolls an 8, its power will temporarily end after it reduces damage this turn. It can be recharged for free on your next rest.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "arcana",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Unleash Chaos",
       "features": [
         {
           "description": "At the beginning of a session, place a number of tokens equal to your Spellcast Trait on this card.\nYou can make a Spellcast Roll against a target within far range and spend any number of tokens to channel raw energy from within yourself and unleash against them. On a success, roll a number of d10 equal to the tokens you spent, and do that much magic damage to the target. Mark a Stress to replenish this card with tokens, up to your Spellcast Trait. Clear all tokens at the end of the session.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "arcana",
-      "recall_cost": 2,
+      "recallCost": 2,
       "type": "spell",
       "name": "Wall Walk",
       "features": [
         {
           "description": "Spend a Hope to allow a creature you can touch to climb on walls and ceilings as easily as walking on the ground below. This lasts until the end of the scene or when you cast it on another creature.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "blade",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "ability",
       "name": "Not Good Enough",
       "features": [
         {
           "description": "When you roll your damage dice, you may reroll any 1s or 2s. If you do, you must take the new result, even on a 1 or 2.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "blade",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "ability",
       "name": "Retaliation",
       "features": [
         {
           "description": "When you take damage from a creature in melee range, you may mark a Stress to immediately deal weapon damage to the creature at half Proficiency (rounded up).",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "blade",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Whirlwind",
       "features": [
         {
           "description": "Make an Attack Roll against a target using a weapon with melee or very close range. On a success, you may spend a Hope to use that roll against every other enemy in that weapon’s range. Any additional enemies you succeed against with this ability take half damage (rounded up).",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "bone",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Deft Maneuvers",
       "features": [
         {
           "description": "You can mark a Stress to move anywhere within far range without making an Agility Roll to get there.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "bone",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "ability",
       "name": "I See It Coming",
       "features": [
         {
           "description": "When you are targeted by an attack coming from beyond melee range, mark a Stress to roll a d4 and increase your Evasion against this attack by its value.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "bone",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "ability",
       "name": "Untouchable",
       "features": [
         {
           "description": "While this card is in your loadout, add half of your Agility score to your Evasion (rounded up).",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "midnight",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Pick and Pull",
       "features": [
         {
           "description": "You have advantage on any attempt to pick a non-magical lock, disarm a trap, or steal an item from a target (either through stealth or by force).",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "midnight",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Rain of Blades",
       "features": [
         {
           "description": "Spend a Hope to conjure throwing blades that strike any enemies very close to you. Make a Spellcast Roll and all targets that you succeed against take d8+2 magic damage using your proficiency. If any targets you hit are currently Vulnerable, they take an additional 1d8 magic damage.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "midnight",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Uncanny Disguise",
       "features": [
         {
           "description": "When you have a few minutes to prepare, you can mark a Stress to don the facade of any humanoid you can picture clearly in your mind. While disguised, all Presence rolls to avoid scrutiny have advantage.\nPlace a number of tokens on this card equal to your Spellcast Trait. When you take an action while disguised, spend one. After the action that spends the last token resolves, the disguise drops.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "sage",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Gifted Tracker",
       "features": [
         {
           "description": "Make a Spellcast Roll to track or ask the GM one question you’d be able to learn about a specific creature or group of creatures based on signs of their passage. If you spend a Hope when you do, take advantage on the roll.\nIf you encounter any creatures you’ve tracked, your Evasion against them is +1.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "sage",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Nature’s Tongue",
       "features": [
         {
           "description": "You can speak the language of the hidden, natural world. When you want to speak to the plants and animals around you, make an Instinct Roll (12). On a success, they’ll give you the information they know. With Fear, their knowledge might be limited or come at a cost.\nIn addition, whenever you make a Spellcast Roll while within a natural environment, you may spend a Hope before the roll to add +1 to the result.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "sage",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Vicious Entangle",
       "features": [
         {
           "description": "Make a Spellcast Roll against a target within far range. On a success, roots and vines reach out from the ground and temporarily Restrain them, dealing 1d8+1 physical damage.\nOn a success, you may also spend a Hope to temporarily Restrain any enemies very close to your target as well.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "splendor",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Bolt Beacon",
       "features": [
         {
           "description": "Make a Spellcast Roll against a target within far range. On a success, spend a Hope to send a bolt of shimmering light towards them. Treat it like a ranged weapon, dealing d8+2 magic damage using your proficiency and making them glow brightly. They become temporarily Vulnerable.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "splendor",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "spell",
       "name": "Mending Touch",
       "features": [
         {
           "description": "You lay your hands upon a creature and channel healing magic to help close their wounds. When you can take a few minutes to focus on the person you’re helping, spend 2 Hope and heal a Hit Point or a Stress.\nOnce per long rest, when you spend this healing time learning something new about them or revealing something about yourself, the 2 Hope you spend heals 2 Hit Points or 2 Stress instead.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "splendor",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "spell",
       "name": "Reassurance",
       "features": [
         {
           "description": "Once per short rest, after an ally attempts an Action Roll, but before the consequences take place, you may offer assistance or words of support. When you do, they may reroll their dice. They must accept the result of this new roll.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "valor",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Bare Bones",
       "features": [
         {
           "description": "While this card is in your loadout, if you choose not to equip armor, you have an Armor Score equal to 4 + your Level.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "valor",
-      "recall_cost": 0,
+      "recallCost": 0,
       "type": "ability",
       "name": "Forceful Push",
       "features": [
         {
           "description": "Make an attack with your primary weapon in melee range. On a success, you deal damage, push the target out of melee range and may spend a Hope to also make them temporarily Vulnerable.\nOn a success with Hope, add an additional 1d6 to your damage dice on this attack.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     },
     {
       "level": 1,
       "domain": "valor",
-      "recall_cost": 1,
+      "recallCost": 1,
       "type": "ability",
       "name": "I Am Your Shield",
       "features": [
         {
           "description": "When an ally very close to you is going to take damage, you may mark a stress to stand in its way and take the damage instead. Reduce the damage by a value equal to your Strength Trait. You may also reduce the damage by spending armor slots.",
           "effects": [],
-          "type": "domain_card"
+          "type": "domainCard"
         }
       ]
     }
@@ -1906,7 +1906,7 @@
     {
       "name": "Gambeson Armor",
       "tier": 1,
-      "base_score": 3,
+      "baseScore": 3,
       "feature": {
         "create": {
           "name": "Flexible",
@@ -1918,12 +1918,12 @@
     },
     {
       "name": "Leather Armor",
-      "base_score": 4,
+      "baseScore": 4,
       "tier": 1
     },
     {
       "name": "Chainmail Armor",
-      "base_score": 5,
+      "baseScore": 5,
       "tier": 1,
       "feature": {
         "create": {
@@ -1936,7 +1936,7 @@
     },
     {
       "name": "Full Plate Armor",
-      "base_score": 6,
+      "baseScore": 6,
       "tier": 1,
       "feature": {
         "create": {
@@ -1963,8 +1963,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -1973,8 +1973,8 @@
       "range": "melee",
       "damage": "d8+3",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -1983,8 +1983,8 @@
       "range": "melee",
       "damage": "d8+1",
       "burden": 1,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -1993,8 +1993,8 @@
       "range": "melee",
       "damage": "d10+3",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2011,8 +2011,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2029,8 +2029,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2039,8 +2039,8 @@
       "range": "melee",
       "damage": "d8+1",
       "burden": 1,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2049,8 +2049,8 @@
       "range": "melee",
       "damage": "d10+3",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2059,8 +2059,8 @@
       "range": "melee",
       "damage": "d8+1",
       "burden": 1,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2077,28 +2077,28 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Halberd",
       "trait": "strength",
-      "range": "very_close",
+      "range": "veryClose",
       "damage": "d8+2",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Spear",
       "trait": "finesse",
-      "range": "very_close",
+      "range": "veryClose",
       "damage": "d8+2",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2107,8 +2107,8 @@
       "range": "far",
       "damage": "d6+3",
       "burden": 2,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2117,14 +2117,14 @@
       "range": "far",
       "damage": "d6+1",
       "burden": 1,
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Longbow",
       "trait": "agility",
-      "range": "very_far",
+      "range": "veryFar",
       "damage": "d6+3",
       "burden": 2,
       "feature": {
@@ -2135,8 +2135,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": false,
+      "isMagical": false,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2145,8 +2145,8 @@
       "range": "melee",
       "damage": "d10+1",
       "burden": 1,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2155,28 +2155,28 @@
       "range": "melee",
       "damage": "d10+3",
       "burden": 2,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Glowing Rings",
       "trait": "agility",
-      "range": "very_close",
+      "range": "veryClose",
       "damage": "d10+2",
       "burden": 2,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Hand Runes",
       "trait": "instinct",
-      "range": "very_close",
+      "range": "veryClose",
       "damage": "d10",
       "burden": 1,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2185,8 +2185,8 @@
       "range": "close",
       "damage": "d8+1",
       "burden": 1,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2195,8 +2195,8 @@
       "range": "close",
       "damage": "d8+1",
       "burden": 1,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2205,8 +2205,8 @@
       "range": "far",
       "damage": "d6+3",
       "burden": 2,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2223,8 +2223,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2233,14 +2233,14 @@
       "range": "far",
       "damage": "d6+1",
       "burden": 1,
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
       "name": "Greatstaff",
       "trait": "knowledge",
-      "range": "very_far",
+      "range": "veryFar",
       "damage": "d6",
       "burden": 2,
       "feature": {
@@ -2251,8 +2251,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": true,
-      "is_secondary": false,
+      "isMagical": true,
+      "isSecondary": false,
       "tier": 1
     },
     {
@@ -2269,8 +2269,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
@@ -2287,8 +2287,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
@@ -2305,8 +2305,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
@@ -2323,14 +2323,14 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
       "name": "Whip",
       "trait": "presence",
-      "range": "very_close",
+      "range": "veryClose",
       "damage": "d6",
       "burden": 1,
       "feature": {
@@ -2341,8 +2341,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
@@ -2359,8 +2359,8 @@
           "type": "weapon"
         }
       },
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     },
     {
@@ -2369,8 +2369,8 @@
       "range": "far",
       "damage": "d6+1",
       "burden": 1,
-      "is_magical": false,
-      "is_secondary": true,
+      "isMagical": false,
+      "isSecondary": true,
       "tier": 1
     }
   ],
