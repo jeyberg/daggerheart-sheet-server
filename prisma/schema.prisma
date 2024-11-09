@@ -27,8 +27,9 @@ model Feature {
   classId    String?
   subclass   Subclass?  @relation(fields: [subclassId], references: [name])
   subclassId String?
-
   armor Armor?
+  domainCard DomainCard? @relation(fields: [domainCardname], references: [name])
+  domainCardname String?
 }
 
 model Community {
@@ -96,6 +97,15 @@ model Subclass {
   features        Feature[]
 }
 
+model DomainCard {
+  level Int
+  domain Domain
+  recallCost Int
+  type DomainCardType
+  name String @id
+  features Feature[]
+}
+
 enum Domain {
   arcana
   blade
@@ -137,4 +147,10 @@ enum FeatureType {
   armor
   weapon
   item
+}
+
+enum DomainCardType {
+  ability
+  grimoire
+  spell
 }

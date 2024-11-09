@@ -33,6 +33,10 @@ async function main() {
     const result = await prisma.weapon.create({ data: weapon });
     console.log(result);
   }
+
+  for (let domainCard of data.domain_card) {
+    await prisma.domainCard.create({ data: domainCard })
+  }
 }
 
 main()

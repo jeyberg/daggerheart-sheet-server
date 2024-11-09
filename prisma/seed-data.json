@@ -1490,13 +1490,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Deft Deceiver",
-      "features": [
-        {
-          "description": "Spend a Hope to take advantage on a roll you make to deceive or trick someone into believing a lie you tell them.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Spend a Hope to take advantage on a roll you make to deceive or trick someone into believing a lie you tell them.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1504,13 +1506,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Enrapture",
-      "features": [
-        {
-          "description": "Make a Spellcast Roll against a close target. On a success, you can temporarily keep their attention on you, narrowing their field of view and drowning out any sound but your voice. Once per short rest, you may also mark a Stress on a success to deal a Stress to the target.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make a Spellcast Roll against a close target. On a success, you can temporarily keep their attention on you, narrowing their field of view and drowning out any sound but your voice. Once per short rest, you may also mark a Stress on a success to deal a Stress to the target.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1518,13 +1522,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Inspirational Words",
-      "features": [
-        {
-          "description": "You can imbue your speech with enhancing power. At the beginning of a session, place a number of tokens on this card equal to your Presence score. When you recite your words, spend a token and choose an option from the list below to grant to the ally you are speaking to. If the action tracker is active, place that token on it. At the end of a session, clear all tokens.",
-          "effects": ["Clear a Stress", "Heal a Hit Point", "Gain a Hope"],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You can imbue your speech with enhancing power. At the beginning of a session, place a number of tokens on this card equal to your Presence score. When you recite your words, spend a token and choose an option from the list below to grant to the ally you are speaking to. If the action tracker is active, place that token on it. At the end of a session, clear all tokens.",
+            "effects": ["Clear a Stress", "Heal a Hit Point", "Gain a Hope"],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1532,26 +1538,28 @@
       "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Ava",
-      "features": [
-        {
-          "name": "Power Push",
-          "description": "Make a Spellcast Roll against a target in melee range. On a success, they are blasted back to far range and take d10+2 magic damage using your proficiency.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Tava’s Armor",
-          "description": "Use an action to spend a Hope that gives a target you can touch +1d6 to their Armor score the next time they mark an Armor Slot. You can’t stack Tava’s Armor on one creature.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Ice Spikes",
-          "description": "Make a Spellcast Roll to summon large ice spikes within very far range. If you use them as a weapon, on a success, deal d6 physical damage using your proficiency.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "name": "Power Push",
+            "description": "Make a Spellcast Roll against a target in melee range. On a success, they are blasted back to far range and take d10+2 magic damage using your proficiency.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Tava’s Armor",
+            "description": "Use an action to spend a Hope that gives a target you can touch +1d6 to their Armor score the next time they mark an Armor Slot. You can’t stack Tava’s Armor on one creature.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Ice Spikes",
+            "description": "Make a Spellcast Roll to summon large ice spikes within very far range. If you use them as a weapon, on a success, deal d6 physical damage using your proficiency.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1559,26 +1567,28 @@
       "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Illiat",
-      "features": [
-        {
-          "name": "Slumber",
-          "description": "Make a Spellcast Roll against a very close target. On a success, they fall into a deep sleep until they take damage or the GM spends a Fear to awaken them.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Arcane Barrage",
-          "description": "Once per short rest, use an action to spend any number of Hope and shoot magical projectiles that automatically strike an enemy within close range. Roll an amount of d6 equal to the Hope you spent, and deal that much direct magic damage.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Telepathy",
-          "description": "You may open a line of mental communication with one target you can see. This connection lasts until you use this spell to connect with another creature.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "name": "Slumber",
+            "description": "Make a Spellcast Roll against a very close target. On a success, they fall into a deep sleep until they take damage or the GM spends a Fear to awaken them.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Arcane Barrage",
+            "description": "Once per short rest, use an action to spend any number of Hope and shoot magical projectiles that automatically strike an enemy within close range. Roll an amount of d6 equal to the Hope you spent, and deal that much direct magic damage.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Telepathy",
+            "description": "You may open a line of mental communication with one target you can see. This connection lasts until you use this spell to connect with another creature.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1586,26 +1596,28 @@
       "recallCost": 2,
       "type": "grimoire",
       "name": "Book of Tyfar",
-      "features": [
-        {
-          "name": "Wild Flame",
-          "description": "Make a Spellcast Roll against up to three enemies in melee range of you. A flame erupts from your hand, dealing 2d6 magic damage and a Stress to any you succeed against.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Magic Hand",
-          "description": "You can reach out with a magical hand the same size and strength as your own to anywhere within far range of you.",
-          "effects": [],
-          "type": "domainCard"
-        },
-        {
-          "name": "Mysterious Mist",
-          "description": "Use an action to spend a Hope and cast a temporary, thick fog that encircles a stationary area up to very close range your current location. Everyone within is Hidden to anybody outside the fog.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "name": "Wild Flame",
+            "description": "Make a Spellcast Roll against up to three enemies in melee range of you. A flame erupts from your hand, dealing 2d6 magic damage and a Stress to any you succeed against.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Magic Hand",
+            "description": "You can reach out with a magical hand the same size and strength as your own to anywhere within far range of you.",
+            "effects": [],
+            "type": "domainCard"
+          },
+          {
+            "name": "Mysterious Mist",
+            "description": "Use an action to spend a Hope and cast a temporary, thick fog that encircles a stationary area up to very close range your current location. Everyone within is Hidden to anybody outside the fog.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1613,13 +1625,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Rune Ward",
-      "features": [
-        {
-          "description": "You have a deeply personal trinket that can be infused with protective magic and held as a ward by you or an ally. Describe what it is and why it’s important to you. When the holder of the ward takes damage, they can spend a Hope to reduce it by 1d8. If the ward die rolls an 8, its power will temporarily end after it reduces damage this turn. It can be recharged for free on your next rest.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You have a deeply personal trinket that can be infused with protective magic and held as a ward by you or an ally. Describe what it is and why it’s important to you. When the holder of the ward takes damage, they can spend a Hope to reduce it by 1d8. If the ward die rolls an 8, its power will temporarily end after it reduces damage this turn. It can be recharged for free on your next rest.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1627,13 +1641,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Unleash Chaos",
-      "features": [
-        {
-          "description": "At the beginning of a session, place a number of tokens equal to your Spellcast Trait on this card.\nYou can make a Spellcast Roll against a target within far range and spend any number of tokens to channel raw energy from within yourself and unleash against them. On a success, roll a number of d10 equal to the tokens you spent, and do that much magic damage to the target. Mark a Stress to replenish this card with tokens, up to your Spellcast Trait. Clear all tokens at the end of the session.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "At the beginning of a session, place a number of tokens equal to your Spellcast Trait on this card.\nYou can make a Spellcast Roll against a target within far range and spend any number of tokens to channel raw energy from within yourself and unleash against them. On a success, roll a number of d10 equal to the tokens you spent, and do that much magic damage to the target. Mark a Stress to replenish this card with tokens, up to your Spellcast Trait. Clear all tokens at the end of the session.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1641,13 +1657,15 @@
       "recallCost": 2,
       "type": "spell",
       "name": "Wall Walk",
-      "features": [
-        {
-          "description": "Spend a Hope to allow a creature you can touch to climb on walls and ceilings as easily as walking on the ground below. This lasts until the end of the scene or when you cast it on another creature.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Spend a Hope to allow a creature you can touch to climb on walls and ceilings as easily as walking on the ground below. This lasts until the end of the scene or when you cast it on another creature.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1655,13 +1673,15 @@
       "recallCost": 1,
       "type": "ability",
       "name": "Not Good Enough",
-      "features": [
-        {
-          "description": "When you roll your damage dice, you may reroll any 1s or 2s. If you do, you must take the new result, even on a 1 or 2.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "When you roll your damage dice, you may reroll any 1s or 2s. If you do, you must take the new result, even on a 1 or 2.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1669,13 +1689,15 @@
       "recallCost": 1,
       "type": "ability",
       "name": "Retaliation",
-      "features": [
-        {
-          "description": "When you take damage from a creature in melee range, you may mark a Stress to immediately deal weapon damage to the creature at half Proficiency (rounded up).",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "When you take damage from a creature in melee range, you may mark a Stress to immediately deal weapon damage to the creature at half Proficiency (rounded up).",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1683,13 +1705,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Whirlwind",
-      "features": [
-        {
-          "description": "Make an Attack Roll against a target using a weapon with melee or very close range. On a success, you may spend a Hope to use that roll against every other enemy in that weapon’s range. Any additional enemies you succeed against with this ability take half damage (rounded up).",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make an Attack Roll against a target using a weapon with melee or very close range. On a success, you may spend a Hope to use that roll against every other enemy in that weapon’s range. Any additional enemies you succeed against with this ability take half damage (rounded up).",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1697,13 +1721,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Deft Maneuvers",
-      "features": [
-        {
-          "description": "You can mark a Stress to move anywhere within far range without making an Agility Roll to get there.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You can mark a Stress to move anywhere within far range without making an Agility Roll to get there.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1711,13 +1737,15 @@
       "recallCost": 1,
       "type": "ability",
       "name": "I See It Coming",
-      "features": [
-        {
-          "description": "When you are targeted by an attack coming from beyond melee range, mark a Stress to roll a d4 and increase your Evasion against this attack by its value.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "When you are targeted by an attack coming from beyond melee range, mark a Stress to roll a d4 and increase your Evasion against this attack by its value.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1725,13 +1753,15 @@
       "recallCost": 1,
       "type": "ability",
       "name": "Untouchable",
-      "features": [
-        {
-          "description": "While this card is in your loadout, add half of your Agility score to your Evasion (rounded up).",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "While this card is in your loadout, add half of your Agility score to your Evasion (rounded up).",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1739,13 +1769,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Pick and Pull",
-      "features": [
-        {
-          "description": "You have advantage on any attempt to pick a non-magical lock, disarm a trap, or steal an item from a target (either through stealth or by force).",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You have advantage on any attempt to pick a non-magical lock, disarm a trap, or steal an item from a target (either through stealth or by force).",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1753,13 +1785,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Rain of Blades",
-      "features": [
-        {
-          "description": "Spend a Hope to conjure throwing blades that strike any enemies very close to you. Make a Spellcast Roll and all targets that you succeed against take d8+2 magic damage using your proficiency. If any targets you hit are currently Vulnerable, they take an additional 1d8 magic damage.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Spend a Hope to conjure throwing blades that strike any enemies very close to you. Make a Spellcast Roll and all targets that you succeed against take d8+2 magic damage using your proficiency. If any targets you hit are currently Vulnerable, they take an additional 1d8 magic damage.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1767,13 +1801,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Uncanny Disguise",
-      "features": [
-        {
-          "description": "When you have a few minutes to prepare, you can mark a Stress to don the facade of any humanoid you can picture clearly in your mind. While disguised, all Presence rolls to avoid scrutiny have advantage.\nPlace a number of tokens on this card equal to your Spellcast Trait. When you take an action while disguised, spend one. After the action that spends the last token resolves, the disguise drops.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "When you have a few minutes to prepare, you can mark a Stress to don the facade of any humanoid you can picture clearly in your mind. While disguised, all Presence rolls to avoid scrutiny have advantage.\nPlace a number of tokens on this card equal to your Spellcast Trait. When you take an action while disguised, spend one. After the action that spends the last token resolves, the disguise drops.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1781,13 +1817,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Gifted Tracker",
-      "features": [
-        {
-          "description": "Make a Spellcast Roll to track or ask the GM one question you’d be able to learn about a specific creature or group of creatures based on signs of their passage. If you spend a Hope when you do, take advantage on the roll.\nIf you encounter any creatures you’ve tracked, your Evasion against them is +1.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make a Spellcast Roll to track or ask the GM one question you’d be able to learn about a specific creature or group of creatures based on signs of their passage. If you spend a Hope when you do, take advantage on the roll.\nIf you encounter any creatures you’ve tracked, your Evasion against them is +1.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1795,13 +1833,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Nature’s Tongue",
-      "features": [
-        {
-          "description": "You can speak the language of the hidden, natural world. When you want to speak to the plants and animals around you, make an Instinct Roll (12). On a success, they’ll give you the information they know. With Fear, their knowledge might be limited or come at a cost.\nIn addition, whenever you make a Spellcast Roll while within a natural environment, you may spend a Hope before the roll to add +1 to the result.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You can speak the language of the hidden, natural world. When you want to speak to the plants and animals around you, make an Instinct Roll (12). On a success, they’ll give you the information they know. With Fear, their knowledge might be limited or come at a cost.\nIn addition, whenever you make a Spellcast Roll while within a natural environment, you may spend a Hope before the roll to add +1 to the result.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1809,13 +1849,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Vicious Entangle",
-      "features": [
-        {
-          "description": "Make a Spellcast Roll against a target within far range. On a success, roots and vines reach out from the ground and temporarily Restrain them, dealing 1d8+1 physical damage.\nOn a success, you may also spend a Hope to temporarily Restrain any enemies very close to your target as well.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make a Spellcast Roll against a target within far range. On a success, roots and vines reach out from the ground and temporarily Restrain them, dealing 1d8+1 physical damage.\nOn a success, you may also spend a Hope to temporarily Restrain any enemies very close to your target as well.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1823,13 +1865,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Bolt Beacon",
-      "features": [
-        {
-          "description": "Make a Spellcast Roll against a target within far range. On a success, spend a Hope to send a bolt of shimmering light towards them. Treat it like a ranged weapon, dealing d8+2 magic damage using your proficiency and making them glow brightly. They become temporarily Vulnerable.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make a Spellcast Roll against a target within far range. On a success, spend a Hope to send a bolt of shimmering light towards them. Treat it like a ranged weapon, dealing d8+2 magic damage using your proficiency and making them glow brightly. They become temporarily Vulnerable.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1837,13 +1881,15 @@
       "recallCost": 1,
       "type": "spell",
       "name": "Mending Touch",
-      "features": [
-        {
-          "description": "You lay your hands upon a creature and channel healing magic to help close their wounds. When you can take a few minutes to focus on the person you’re helping, spend 2 Hope and heal a Hit Point or a Stress.\nOnce per long rest, when you spend this healing time learning something new about them or revealing something about yourself, the 2 Hope you spend heals 2 Hit Points or 2 Stress instead.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "You lay your hands upon a creature and channel healing magic to help close their wounds. When you can take a few minutes to focus on the person you’re helping, spend 2 Hope and heal a Hit Point or a Stress.\nOnce per long rest, when you spend this healing time learning something new about them or revealing something about yourself, the 2 Hope you spend heals 2 Hit Points or 2 Stress instead.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1851,13 +1897,15 @@
       "recallCost": 0,
       "type": "spell",
       "name": "Reassurance",
-      "features": [
-        {
-          "description": "Once per short rest, after an ally attempts an Action Roll, but before the consequences take place, you may offer assistance or words of support. When you do, they may reroll their dice. They must accept the result of this new roll.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Once per short rest, after an ally attempts an Action Roll, but before the consequences take place, you may offer assistance or words of support. When you do, they may reroll their dice. They must accept the result of this new roll.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1865,13 +1913,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Bare Bones",
-      "features": [
-        {
-          "description": "While this card is in your loadout, if you choose not to equip armor, you have an Armor Score equal to 4 + your Level.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "While this card is in your loadout, if you choose not to equip armor, you have an Armor Score equal to 4 + your Level.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1879,13 +1929,15 @@
       "recallCost": 0,
       "type": "ability",
       "name": "Forceful Push",
-      "features": [
-        {
-          "description": "Make an attack with your primary weapon in melee range. On a success, you deal damage, push the target out of melee range and may spend a Hope to also make them temporarily Vulnerable.\nOn a success with Hope, add an additional 1d6 to your damage dice on this attack.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "Make an attack with your primary weapon in melee range. On a success, you deal damage, push the target out of melee range and may spend a Hope to also make them temporarily Vulnerable.\nOn a success with Hope, add an additional 1d6 to your damage dice on this attack.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     },
     {
       "level": 1,
@@ -1893,13 +1945,15 @@
       "recallCost": 1,
       "type": "ability",
       "name": "I Am Your Shield",
-      "features": [
-        {
-          "description": "When an ally very close to you is going to take damage, you may mark a stress to stand in its way and take the damage instead. Reduce the damage by a value equal to your Strength Trait. You may also reduce the damage by spending armor slots.",
-          "effects": [],
-          "type": "domainCard"
-        }
-      ]
+      "features": {
+        "create": [
+          {
+            "description": "When an ally very close to you is going to take damage, you may mark a stress to stand in its way and take the damage instead. Reduce the damage by a value equal to your Strength Trait. You may also reduce the damage by spending armor slots.",
+            "effects": [],
+            "type": "domainCard"
+          }
+        ]
+      }
     }
   ],
   "armor": [
