@@ -83,5 +83,10 @@ app.get("/api/community/all", async (req, res) => {
   res.json(communities);
 });
 
+/* app.get("/api/domain-card/all", async (req, res) => {
+  const level = req.query?.level;
+  const domainCards = await prisma.dom
+}); */
+
 // Server start
 const server = app.listen(3000, () => console.log("server ready"));
